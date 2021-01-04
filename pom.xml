@@ -11,14 +11,6 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId></artifactId>
-                <configuration>
-                    <source>7</source>
-                    <target>7</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>8</source>
@@ -29,25 +21,20 @@
     </build>
 
     <dependencies>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
+        <!--         Ваши зависимости-->
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.6</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
 
-        <dependency>
-             <groupId>junit</groupId>
-             <artifactId>junit</artifactId>
-             <version>4.12</version>
-             <scope>test</scope>
-         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.22</version>
+            <version>8.0.11</version>
         </dependency>
 
         <dependency>
@@ -59,16 +46,9 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>4.3.10.Final</version>
-        </dependency>
-
-
-        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
             <version>5.4.10.Final</version>
         </dependency>
-     </dependencies>
+
+    </dependencies>
 
 </project>

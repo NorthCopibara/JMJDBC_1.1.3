@@ -11,10 +11,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Util {
-
-    private final String URL = "jdbc:mysql://localhost:3306/users?autoReconnect=true&useSSL=false&serverTimezone=UTC";
+    private final String URL = "jdbc:mysql://localhost:3306/test?autoReconnect=true&useSSL=false&serverTimezone=UTC";
     private final String USERNAME = "root";
-    private final String PASSWORD = "";
+    private final String PASSWORD = "Ljvbyfnjh1ghbijk";
 
     private StandardServiceRegistry registry;
     private SessionFactory sessionFactory;
